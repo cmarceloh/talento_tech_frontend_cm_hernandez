@@ -41,6 +41,13 @@
           <li class="nav__item">
             <a href="contacto.html" class="nav__link">Contacto</a>
           </li>
+
+          <!-- BOTÓN DE CARRITO DESTACADO -->
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--cart">
+              <i class="fa-solid fa-cart-shopping"></i> Carrito
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -50,17 +57,17 @@
       <section class="historia">
         <h1 class="section-title">Nuestra Historia</h1>
         <p class="historia__texto">
-          Pizzarella nació en 2018 con la pasión de traer la auténtica pizza
-          napolitana a la ciudad. Utilizamos hornos de barro, masa con 48 horas
-          de fermentación natural e ingredientes seleccionados directamente de
+          Pizzarella nació en 2012 con la pasión de traer la auténtica pizza a
+          la ciudad. Utilizamos hornos electricos y a gas, masa con 48 horas de
+          fermentación natural e ingredientes seleccionados directamente de
           productores locales.
         </p>
         <div class="historia__grid">
           <div class="card-info">
             <i class="fa-solid fa-fire card-info__icon"></i>
-            <h3>Horno a Leña</h3>
+            <h3>Horno a Gas y Electrico</h3>
             <p>
-              Cocinamos nuestras pizzas a más de 400°C para lograr el piso
+              Cocinamos nuestras pizzas a más de 280°C para lograr el piso
               crocante y bordes aireados únicos.
             </p>
           </div>
@@ -83,26 +90,19 @@
         </div>
       </section>
 
-      <!-- SECCIÓN MULTIMEDIA (VIDEO PROCESO) -->
+      <!-- SECCIÓN MULTIMEDIA (VIDEO LOCAL RESPONSIVO) -->
       <section class="multimedia-section">
         <h2 class="section-title">Conocé Nuestro Proceso de Elaboración</h2>
         <div class="video-wrapper">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/5qap5aO4i9A"
-            title="Video elaboración de pizza"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-            "
-            allowfullscreen
-          ></iframe>
+          <!-- Reproductor de video con clase para aplicar estilos CSS -->
+          <video
+            controls
+            poster="../img/cap_video.jpeg"
+            class="video-responsive"
+          >
+            <source src="../video/video_pizza.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video HTML5.
+          </video>
         </div>
       </section>
     </main>

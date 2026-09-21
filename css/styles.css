@@ -55,6 +55,22 @@ body {
   color: #ff4757; /* Cambia de color al pasar el cursor o al estar activo */
 }
 
+/* Botón de Carrito en la barra de navegación */
+.nav__link--cart {
+  background-color: #ff4757;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  color: #ffffff !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav__link--cart:hover {
+  background-color: #e84118;
+}
+
 /* ========================================================================== 
    3. SECCIÓN HERO / BANNER PRINCIPAL (CLASE 5 Y 6) 
    ========================================================================== */
@@ -317,10 +333,20 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Contenedor del video en Flexbox */
 .video-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Regla para que el video responda al ancho de la pantalla */
+.video-responsive {
+  width: 100%; /* Ocupa el 100% del contenedor en pantallas chicas */
+  max-width: 640px; /* No supera los 640px en pantallas grandes (PC) */
+  height: auto; /* Mantiene la proporción original sin deformar el video */
+  border-radius: 8px; /* Borde redondeado */
 }
 
 /* ========================================================================== 
