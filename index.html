@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzarella | Las mejores pizzas artesanales</title>
+
+    <!-- FUENTES DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ARCHIVO CSS EXTERNO -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ========================================== -->
+    <!-- ENCABEZADO Y NAVEGACIÓN PRINCIPAL          -->
+    <!-- ========================================== -->
+    <header class="header">
+      <div class="header__logo-container">
+        <a href="index.html" class="header__logo">🍕 Pizzarella</a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active">Inicio</a>
+          </li>
+          <li class="nav__item"><a href="#menu" class="nav__link">Menú</a></li>
+          <li class="nav__item">
+            <a href="#resenas" class="nav__link">Reseñas</a>
+          </li>
+          <li class="nav__item">
+            <a href="pages/sobreNosotros.html" class="nav__link"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="pages/contacto.html" class="nav__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- SECCIÓN HERO / SECCIÓN DE BIENVENIDA       -->
+    <!-- ========================================== -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Pizzas Artesanales a la Piedra</h1>
+        <p class="hero__subtitle">
+          Masa madre, ingredientes frescos y el verdadero sabor italiano a tu
+          mesa.
+        </p>
+        <a href="#menu" class="hero__btn">Ver Menú</a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECCIÓN CONTENIDO PRINCIPAL (MAIN)        -->
+    <!-- ========================================== -->
+    <main>
+      <!-- SECCIÓN PRODUCTOS (FLEXBOX - 4 POR FILA EN DESKTOP) -->
+      <section class="productos" id="menu">
+        <h2 class="section-title">Nuestras Pizzas Destacadas</h2>
+        <p class="section-subtitle">
+          Seleccioná tu favorita y agregala al carrito
+        </p>
+
+        <div class="productos__container">
+          <!-- CARD 1 -->
+          <article class="card-producto">
+            <img
+              src="img/img1.jpg"
+              alt="Pizza Muzzarella"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Pizza Muzzarella</h3>
+              <p class="card-producto__descripcion">
+                Salsa de tomate casera, abundante muzzarella, orégano y
+                aceitunas verdes.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$8.500</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="card-producto">
+            <img
+              src="img/img2.jpg"
+              alt="Pizza Napolitana"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Pizza Napolitana</h3>
+              <p class="card-producto__descripcion">
+                Salsa de tomate, muzzarella, rodajas de tomate fresco, ajo y
+                provenzal.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$9.200</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="card-producto">
+            <img
+              src="img/img3.jpg"
+              alt="Pizza Fugazzeta"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Pizza Fugazzeta</h3>
+              <p class="card-producto__descripcion">
+                Masa rellena de muzzarella, cubierta con cebolla caramelizada y
+                orégano.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$9.800</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="card-producto">
+            <img
+              src="img/img4.jpg"
+              alt="Pizza Calabresa"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Pizza Calabresa</h3>
+              <p class="card-producto__descripcion">
+                Salsa de tomate, muzzarella, longaniza calabresa en rodajas y
+                ají molido.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$10.000</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="card-producto">
+            <img
+              src="img/img5.jpg"
+              alt="Pizza 4 Quesos"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Pizza 4 Quesos</h3>
+              <p class="card-producto__descripcion">
+                Muzzarella, provolone, queso azul y parmesano gratinado de
+                primera calidad.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$10.500</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="card-producto">
+            <img
+              src="img/img6.jpg"
+              alt="Pizza Jamba y Morrones"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Jamon y Morrones</h3>
+              <p class="card-producto__descripcion">
+                Salsa de tomate, muzzarella, jamón cocido seleccionado y
+                morrones asados.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$9.700</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 7 -->
+          <article class="card-producto">
+            <img
+              src="img/img7.jpg"
+              alt="Pizza Rúcula y Jamón Crudo"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Rúcula & Crudo</h3>
+              <p class="card-producto__descripcion">
+                Muzzarella, rúcula fresca, lonjas de jamón crudo y lascas de
+                parmesano.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$11.200</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 8 -->
+          <article class="card-producto">
+            <img
+              src="img/img8.jpg"
+              alt="Especial Pizzarella"
+              class="card-producto__img"
+            />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Especial Pizzarella</h3>
+              <p class="card-producto__descripcion">
+                La de la casa: muzzarella, huevo frito, panceta crocante y
+                palmitos.
+              </p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$11.800</span>
+                <button class="card-producto__btn">
+                  <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN RESEÑAS (CSS GRID) -->
+      <section class="resenas" id="resenas">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="resenas__grid">
+          <article class="card-resena">
+            <div class="card-resena__header">
+              <i class="fa-solid fa-user-ninja card-resena__avatar"></i>
+              <div>
+                <h4>Lucas Gómez</h4>
+                <div class="card-resena__stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="card-resena__texto">
+              "La masa a la piedra de Pizzarella es increíble. Llegó súper
+              caliente y crujiente. ¡Recomiendo la Fugazzeta rellena!"
+            </p>
+          </article>
+
+          <article class="card-resena">
+            <div class="card-resena__header">
+              <i class="fa-solid fa-user-astronaut card-resena__avatar"></i>
+              <div>
+                <h4>Mariana Silva</h4>
+                <div class="card-resena__stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="card-resena__texto">
+              "Excelente atención y el pedido llegó rapidísimo. Se nota la
+              calidad de los ingredientes. Mi pizzería favorita del barrio."
+            </p>
+          </article>
+
+          <article class="card-resena">
+            <div class="card-resena__header">
+              <i class="fa-solid fa-user-tie card-resena__avatar"></i>
+              <div>
+                <h4>Esteban Peralta</h4>
+                <div class="card-resena__stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="card-resena__texto">
+              "La pizza de Rúcula y Crudo es de otro nivel. Gran variedad de
+              sabores y excelente relación calidad-precio."
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- PIE DE PÁGINA (FOOTER)                     -->
+    <!-- ========================================== -->
+    <footer class="footer">
+      <div class="footer__content">
+        <p>
+          <strong>Pizzarella &copy; 2026</strong> - Todos los derechos
+          reservados.
+        </p>
+        <div class="footer__socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

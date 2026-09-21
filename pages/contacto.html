@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Pizzarella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO -->
+    <header class="header">
+      <div class="header__logo-container">
+        <a href="../index.html" class="header__logo">🍕 Pizzarella</a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#menu" class="nav__link">Menú</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#resenas" class="nav__link">Reseñas</a>
+          </li>
+          <li class="nav__item">
+            <a href="sobreNosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacto.html" class="nav__link active">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <!-- SECCIÓN FORMULARIO DE CONTACTO -->
+      <section class="contacto">
+        <h1 class="section-title">Escribinos tu Consulta</h1>
+        <p class="section-subtitle">
+          Completá el formulario y te responderemos a la brevedad.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xxxxxxxx"
+          method="POST"
+          class="contacto__form"
+        >
+          <div class="form-group">
+            <label for="nombre"
+              ><i class="fa-solid fa-user"></i> Nombre completo:</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej: Juan Pérez"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email"
+              ><i class="fa-solid fa-envelope"></i> Correo electrónico:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tuemail@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje"
+              ><i class="fa-solid fa-comment"></i> Tu Mensaje:</label
+            >
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Escribí tu consulta o pedido especial aquí..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+      </section>
+
+      <!-- SECCIÓN MAPA Y HORARIOS -->
+      <section class="ubicacion">
+        <h2>Ubicación y Horarios</h2>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Av. Corrientes 1234, CABA,
+          Argentina
+        </p>
+        <p>
+          <i class="fa-solid fa-clock"></i> Martes a Domingos: 19:00 hs a 00:00
+          hs
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__content">
+        <p>
+          <strong>Pizzarella &copy; 2026</strong> - Todos los derechos
+          reservados.
+        </p>
+        <div class="footer__socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
