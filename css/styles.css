@@ -374,6 +374,17 @@ body {
 .footer__socials a:hover {
   color: #ff4757;
 }
+/* Estilo para el enlace con tu nombre */
+.footer__author a {
+  color: #ffffff;
+  text-decoration: none; /* Quita el subrayado azul por defecto */
+  transition: color 0.3s ease; /* Le da un efecto suave al cambiar de color */
+}
+
+/* Efecto al pasar el cursor sobre tu nombre */
+.footer__author a:hover {
+  color: #ff4757; /* Usa exactamente el mismo rojo del corazón */
+}
 
 /* ========================================================================== 
    10. MEDIA QUERIES - DISEÑO RESPONSIVO (CLASE 7) 
