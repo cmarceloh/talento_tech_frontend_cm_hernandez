@@ -1,27 +1,22 @@
-# Pizzarella - E-Commerce de Pizzería Artesanal
+# Pizzarella - Pizzería Artesanal
 
-Este proyecto corresponde a la **Pre-Entrega de Proyecto Obligatorio** para el curso de **Frontend**.
-Consiste en un sitio web e-commerce dedicado a la venta online de pizzas artesanales.
+Este proyecto tiene un propósito especial: quiero regalárselo a una amiga que tiene una pizzería y todavía no tiene una página web. Cuando lo termine, la idea es comprarle un dominio en NIC y publicar el sitio en Vercel o Netlify para regalárselo. Así, además de poner en práctica lo que voy aprendiendo, puedo darle una mano a alguien.
 
-## Propósito del Proyecto
+Pre-entrega del proyecto de Frontend. Es un sitio web para conocer la carta de pizzas, leer reseñas, conocer la historia de la pizzería y enviar una consulta.
 
-Crear una plataforma responsiva, accesible y estructurada. Actualmente, el proyecto se encuentra en su primera fase de desarrollo, utilizando únicamente **HTML5 y CSS3**. En la entrega final, se implementará interactividad y dinamismo mediante **JavaScript**.
+## Contenido
 
-El sitio permite a los usuarios explorar la carta de productos, leer testimonios de clientes, conocer la historia de la pizzería y contactarse a través de un formulario funcional.
+- `index.html`: página principal y carta de pizzas.
+- `pages/sobreNosotros.html`: información sobre la pizzería.
+- `pages/contacto.html`: formulario de contacto y datos de ubicación.
+- `css/styles.css`: estilos del sitio.
+- `js/contacto.js`: conexión del formulario con Formspree.
+- `img/` y `video/`: recursos multimedia.
 
-## Estructura de Archivos del Proyecto (Fase 1 - Sin JS)
+## Formulario de contacto
 
-```text
-pizzarella/
-│
-├── css/
-│   └── styles.css
-├── pages/
-│   ├── sobreNosotros.html
-│   └── contacto.html
-├── img/       <-- (Imágenes del sitio: logo, catálogo de pizzas)
-├── video/     <-- (Video local del proceso de elaboración + captura del video)
-│   └── video_pizza.mp4
-├── index.html
-└── README.md
-```
+El formulario permite enviar nombre, correo electrónico y mensaje. Para recibir las consultas se utiliza Formspree:
+
+https://formspree.io/f/xljdaeob
+
+El formulario utiliza la integración que proporciona Formspree.

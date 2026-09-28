@@ -34,7 +34,7 @@
             <a href="../index.html#resenas" class="nav__link">Reseñas</a>
           </li>
           <li class="nav__item">
-            <a href="sobreNosotros.html" class="nav__link">Sobre Nosotros</a>
+            <a href="sobreNosotros.html" class="nav__link">Nosotros</a>
           </li>
           <li class="nav__item">
             <a href="contacto.html" class="nav__link active">Contacto</a>
@@ -58,9 +58,14 @@
           Completá el formulario y te responderemos a la brevedad.
         </p>
 
+        <p data-fs-success role="status" aria-live="polite"></p>
+        <p data-fs-error role="alert" aria-live="assertive"></p>
+
         <form
-          action="https://formspree.io/f/xxxxxxxx"
+          id="contacto-form"
+          action="https://formspree.io/f/xljdaeob"
           method="POST"
+          autocomplete="on"
           class="contacto__form"
         >
           <div class="form-group">
@@ -71,9 +76,11 @@
               type="text"
               id="nombre"
               name="nombre"
-              placeholder="Ej: Juan Pérez"
+              data-fs-field
+              placeholder="Ej: Leo Messi"
               required
             />
+            <span data-fs-error="nombre"></span>
           </div>
 
           <div class="form-group">
@@ -84,9 +91,11 @@
               type="email"
               id="email"
               name="email"
+              data-fs-field
               placeholder="tuemail@ejemplo.com"
               required
             />
+            <span data-fs-error="email"></span>
           </div>
 
           <div class="form-group">
@@ -96,13 +105,17 @@
             <textarea
               id="mensaje"
               name="mensaje"
+              data-fs-field
               rows="5"
               placeholder="Escribí tu consulta o pedido especial aquí..."
               required
             ></textarea>
+            <span data-fs-error="mensaje"></span>
           </div>
 
-          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+          <button type="submit" class="btn-submit" data-fs-submit-btn>
+            Enviar Mensaje
+          </button>
         </form>
       </section>
 
@@ -110,11 +123,15 @@
       <section class="ubicacion">
         <h2>Ubicación y Horarios</h2>
         <p>
-          <i class="fa-solid fa-location-dot"></i> Av. Corrientes 1234, CABA,
+          <i class="fa-solid fa-location-dot"></i> Rio Cuarto 3331, CABA,
           Argentina
         </p>
         <p>
-          <i class="fa-solid fa-clock"></i> Martes a Domingos: 19:00 hs a 00:00
+          <i class="fa-solid fa-clock"></i> Martes a Domingos: 11:00 hs a 15:00
+          hs
+        </p>
+        <p>
+          <i class="fa-solid fa-clock"></i> Martes a Domingos: 19:00 hs a 23:00
           hs
         </p>
       </section>
@@ -143,5 +160,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/contacto.js" defer></script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   </body>
 </html>

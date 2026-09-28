@@ -19,6 +19,7 @@ body {
    ========================================================================== */
 .header {
   background-color: #1a1a1a;
+  width: 100%;
   display: flex; /* Flexbox para alinear logo y menú en la misma fila */
   justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
   align-items: center; /* Alineación vertical al centro */
@@ -355,9 +356,14 @@ body {
 .footer {
   background-color: #1a1a1a;
   color: #ffffff;
+  width: 100%;
   text-align: center;
   padding: 1.5rem;
   margin-top: 3rem;
+}
+
+.footer__content {
+  overflow-wrap: anywhere;
 }
 
 .footer__socials {
@@ -406,12 +412,27 @@ body {
   }
 }
 
+@media (max-width: 860px) {
+  .header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1.2rem;
+  }
+}
+
 /* Celulares / Pantallas pequeñas (hasta 600px) - CORREGIDO */
 @media (max-width: 600px) {
   /* El header cambia de fila a columna */
   .header {
-    flex-direction: column;
-    gap: 1rem;
     padding: 1rem;
   }
 
