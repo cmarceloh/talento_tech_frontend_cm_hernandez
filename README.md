@@ -2,7 +2,7 @@
 
 Este proyecto tiene un propósito especial: quiero regalárselo a una amiga que tiene una pizzería y todavía no tiene una página web. Cuando lo termine, la idea es comprarle un dominio en NIC y publicar el sitio en Vercel o Netlify para regalárselo. Así, además de poner en práctica lo que voy aprendiendo, puedo darle una mano a alguien.
 
-Pre-entrega del proyecto de Frontend. Es un sitio web para conocer la carta de pizzas, leer reseñas, conocer la historia de la pizzería y enviar una consulta.
+Esta es la pre-entrega del proyecto de Frontend. Se trata de un sitio web donde puedo explorar la variedad de pizza, enviar consultas y en un futuro comprar por acá también.
 
 ## Contenido
 
