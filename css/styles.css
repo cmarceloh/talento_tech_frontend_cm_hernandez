@@ -30,7 +30,7 @@ body {
   justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
   align-items: center; /* Alineación vertical al centro */
   padding: 1.6rem 5%;
-  position: sticky; /* Cabecera fija al hacer scroll (Clase 5) */
+  position: sticky; /* Cabecera fija al hacer scroll  */
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -79,7 +79,7 @@ body {
 }
 
 /* ========================================================================== 
-   3. SECCIÓN HERO / BANNER PRINCIPAL (CLASE 5 Y 6) 
+   3. SECCIÓN HERO / BANNER PRINCIPAL 
    ========================================================================== */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), #2f3542;
@@ -141,7 +141,7 @@ body {
 }
 
 /* ========================================================================== 
-   5. SECCIÓN PRODUCTOS - FLEXBOX 4 CARDS POR FILA EN DESKTOP (CLASE 6) 
+   5. SECCIÓN PRODUCTOS - FLEXBOX 4 CARDS POR FILA EN DESKTOP  
    ========================================================================== */
 .productos {
   padding: 3.2rem 5%;
@@ -223,7 +223,7 @@ body {
 }
 
 /* ========================================================================== 
-   6. SECCIÓN RESEÑAS - CSS GRID (CLASE 6) 
+   6. SECCIÓN RESEÑAS - CSS GRID 
    ========================================================================== */
 .resenas {
   background-color: #f1f2f6;
@@ -317,7 +317,7 @@ body {
 }
 
 /* ========================================================================== 
-   8. SOBRE NOSOTROS Y MULTIMEDIA (CLASE 2 Y 6) 
+   8. SOBRE NOSOTROS Y MULTIMEDIA 
    ========================================================================== */
 .historia__grid {
   display: flex;
@@ -357,7 +357,7 @@ body {
 }
 
 /* ========================================================================== 
-   9. PIE DE PÁGINA (FOOTER) (CLASE 1 Y 3) 
+   9. PIE DE PÁGINA (FOOTER) (CLASE 
    ========================================================================== */
 .footer {
   background-color: #1a1a1a;
@@ -399,7 +399,7 @@ body {
 }
 
 /* ========================================================================== 
-   10. MEDIA QUERIES - DISEÑO RESPONSIVO (CLASE 7) 
+   10. MEDIA QUERIES - DISEÑO RESPONSIVO
    ========================================================================== */
 
 /* Tablets / Pantallas medianas (hasta 992px) */
@@ -435,7 +435,7 @@ body {
   }
 }
 
-/* Celulares / Pantallas pequeñas (hasta 600px) - CORREGIDO */
+/* Celulares / Pantallas pequeñas (hasta 600px) */
 @media (max-width: 600px) {
   /* El header cambia de fila a columna */
   .header {
