@@ -21,7 +21,7 @@ body {
 }
 
 /* ========================================================================== 
-   2. ENCABEZADO Y BARRA DE NAVEGACIÓN - FLEXBOX (CLASE 6) 
+   2. ENCABEZADO Y BARRA DE NAVEGACIÓN - FLEXBOX 
    ========================================================================== */
 .header {
   background-color: #1a1a1a;
@@ -269,7 +269,7 @@ body {
 }
 
 /* ========================================================================== 
-   7. FORMULARIO Y UBICACIÓN (CLASE 4) 
+   7. FORMULARIO Y UBICACIÓN 
    ========================================================================== */
 .contacto__form {
   background: #ffffff;
